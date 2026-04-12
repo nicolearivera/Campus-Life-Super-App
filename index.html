@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Life Super App</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Fraunces (display) + Outfit (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS — loaded AFTER Bootstrap -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <!-- Navigation matches wireframe: Logo | Resources▼ | Campus Map | Campus Employment | Clubs -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Campus Life</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+
+          <!-- Resources dropdown (has subcategories — wireframe note) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+            <ul class="dropdown-menu custom-dropdown">
+              <li><a class="dropdown-item" href="resources.html">🏠 Residence</a></li>
+              <li><a class="dropdown-item" href="resources.html#library">📚 Library</a></li>
+              <li><a class="dropdown-item" href="resources.html#dining">🍽️ Dining</a></li>
+              <li><a class="dropdown-item" href="resources.html#events">📅 Events</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="map.html">Campus Map</a></li>
+          <li class="nav-item"><a class="nav-link" href="employment.html">Campus Employment</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="clubs.html">Clubs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="home-hero">
+    <div class="hero-texture"></div>
+    <div class="container hero-inner">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <span class="hero-label">State University · 2026</span>
+          <h1 class="hero-headline">Everything<br /><em>Campus.</em><br />One Place.</h1>
+          <p class="hero-body">Resources, maps, jobs, clubs, dining — all the tools you need to thrive on campus, unified into a single app.</p>
+          <div class="hero-actions">
+            <a href="resources.html" class="btn btn-hero-primary">Explore Resources</a>
+            <a href="map.html" class="btn btn-hero-outline">View Campus Map</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+          <div class="hero-stat-stack">
+            <div class="hero-stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Resource Hubs</span>
+            </div>
+            <div class="hero-stat accent">
+              <span class="stat-num">60+</span>
+              <span class="stat-label">Active Clubs</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-num">200+</span>
+              <span class="stat-label">Job Listings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT US ===== -->
+  <!-- Wireframe: Home page includes About Us -->
+  <section class="section-about" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-graphic">
+            <div class="ag-ring ag-ring-1"></div>
+            <div class="ag-ring ag-ring-2"></div>
+            <div class="ag-center">🎓</div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="section-eyebrow">About Us</span>
+          <h2 class="section-title">Built for students,<br />by students.</h2>
+          <p class="section-body">Campus Life Super App is a student-led initiative to bring all the scattered tools of campus life into one seamless experience. Whether you're a freshman finding your dorm or a senior looking for your last campus job, we've got you covered.</p>
+          <div class="about-pills">
+            <span class="about-pill">🏛️ All buildings</span>
+            <span class="about-pill">🍕 All dining halls</span>
+            <span class="about-pill">📚 Library access</span>
+            <span class="about-pill">💼 Employment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUICK NAV CARDS ===== -->
+  <section class="section-quicknav">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Where do you want to go?</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-6">
+          <a href="resources.html" class="qnav-card">
+            <span class="qnav-icon">🏠</span>
+            <strong>Resources</strong>
+            <small>Residence · Library · Dining · Events</small>
+          </a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="map.html" class="qnav-card">
+            <span class="qnav-icon">🗺️</span>
+            <strong>Campus Map</strong>
+            <small>Find any building on campus</small>
+          </a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="employment.html" class="qnav-card">
+            <span class="qnav-icon">💼</span>
+            <strong>Employment</strong>
+            <small>Hiring listings &amp; FAQ</small>
+          </a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="clubs.html" class="qnav-card">
+            <span class="qnav-icon">🎯</span>
+            <strong>Clubs</strong>
+            <small>Tryouts · Requirements · Partners</small>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT US ===== -->
+  <!-- Wireframe: Home page includes Contact Us + Online Chat -->
+  <section class="section-contact" id="contact">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <span class="section-eyebrow light">Contact Us</span>
+          <h2 class="section-title light">Get in touch.</h2>
+          <p class="section-body light">Have a question, suggestion, or issue? Send us a message and our team will get back to you within one business day.</p>
+          <div class="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control campus-input" placeholder="Your name" id="contactName" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control campus-input" placeholder="Your university email" id="contactEmail" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control campus-input" rows="4" placeholder="Your message…" id="contactMsg"></textarea>
+            </div>
+            <button class="btn btn-hero-primary" id="sendContactBtn">Send Message</button>
+          </div>
+        </div>
+
+        <!-- Online Chat + Info -->
+        <div class="col-lg-6">
+          <span class="section-eyebrow light">Online Chat</span>
+          <h2 class="section-title light">Chat with us live.</h2>
+          <p class="section-body light">Our student support team is online weekdays 9 AM – 5 PM. Ask anything about campus resources, housing, or events.</p>
+
+          <!-- Chat widget -->
+          <div class="chat-widget">
+            <div class="chat-header">
+              <span class="chat-dot"></span> Support Team · <span id="chatStatus">Online</span>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+              <div class="chat-msg bot">👋 Hi! I'm the Campus Life assistant. How can I help you today?</div>
+            </div>
+            <div class="chat-input-row">
+              <input type="text" class="chat-input" id="chatInput" placeholder="Type a message…" />
+              <button class="chat-send-btn" id="chatSendBtn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- Wireframe footer: © 2026 Campus Life Super App -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4">
+          <strong class="footer-brand">Campus Life</strong>
+          <div class="footer-sub">State University</div>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="index.html">Home</a> ·
+          <a href="resources.html">Resources</a> ·
+          <a href="map.html">Map</a> ·
+          <a href="employment.html">Employment</a> ·
+          <a href="clubs.html">Clubs</a>
+        </div>
+        <div class="col-md-4 text-md-end">
+          © 2026 Campus Life Super App
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
